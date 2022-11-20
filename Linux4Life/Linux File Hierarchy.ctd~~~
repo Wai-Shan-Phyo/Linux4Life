@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <bookmarks list=""/>
+  <node name="Linux Boot Process" unique_id="2" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="115" is_bold="1" foreground="#ff0000" ts_creation="1668950455" ts_lastsave="1668951719">
+    <rich_text>
+
+1.BIOS(Basic Input Output System execute MBR)
+2.MBR(Master Boot Record execute GRUB)-&gt;MBR  ==512Bytes
+      1 . primaryBoot Loader==446Bytes
+      2.Partition Tables==64Bytes
+      3.MBR Validation==2Bytes
+3.GRUB(Grand Unified Bootloader execute Kernel)
+4.Kernel(Kernel execute /sbin/init)
+5.Init(Init execute runlevel programs)
+6.Runlevel(Runlevel programs are execute from  /etc/rc.d/rc*d/)</rich_text>
+  </node>
+  <node name="Linux Run Level" unique_id="3" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="115" is_bold="0" foreground="#ff0000" ts_creation="1668951719" ts_lastsave="1668953956">
+    <rich_text justification="left"></rich_text>
+    <table char_offset="0" justification="left" col_min="60" col_max="60" col_widths="0,195,210">
+      <row>
+        <cell>0</cell>
+        <cell>Hait</cell>
+        <cell>Shutdown System</cell>
+      </row>
+      <row>
+        <cell>1</cell>
+        <cell>Single-user Mode</cell>
+        <cell>Does not Configure network interfaces</cell>
+      </row>
+      <row>
+        <cell>2</cell>
+        <cell>Multi-user Mode</cell>
+        <cell>Does not Configure network interfaces</cell>
+      </row>
+      <row>
+        <cell>3</cell>
+        <cell>Multi-user Mode With Networking</cell>
+        <cell>Start the System Normally</cell>
+      </row>
+      <row>
+        <cell>4</cell>
+        <cell>Undefined</cell>
+        <cell>Not used/user-definable</cell>
+      </row>
+      <row>
+        <cell>5</cell>
+        <cell>X11</cell>
+        <cell>As runlevel3+display manager(x)</cell>
+      </row>
+      <row>
+        <cell>6</cell>
+        <cell>Reboot</cell>
+        <cell>Reboot the System</cell>
+      </row>
+      <row>
+        <cell>Run Level</cell>
+        <cell> Mode </cell>
+        <cell>Action</cell>
+      </row>
+    </table>
+  </node>
+  <node name="Linux File Hierarchy" unique_id="4" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="115" is_bold="1" foreground="#ff0000" ts_creation="1668953956" ts_lastsave="1668954470">
+    <rich_text>/ == Root Directory(Folder) cd  / (Enter)  ls
+GUI=Folder
+CLI=Directory(Dir)
+
+sub directory
+
+/bin   (User  Binary/Support Command  keys)
+/sbin  (System Binary /System File)
+/etc  (Configuration File)
+/dev  (Device File)
+/proc  (Process Imformation)
+/var (Variables File/Lock File)
+/tmp (temoprary File)
+/usr (User Program)
+/home (Home Directory/user Directory)
+/boot (Linux boot system)
+/lib (System Library)
+/opt (
+
+ </rich_text>
+  </node>
+</cherrytree>
